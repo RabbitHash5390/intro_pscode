@@ -1,4 +1,28 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+BEGIN NumberGuessingGame
+    SET randomNumber = RANDOM(1, 10)
+    SET attempts = 3
+    PRINT "Guess the number between 1 and 10. You have 3 attempts."
+
+    WHILE attempts > 0 DO
+        PRINT "Enter your guess:"
+        READ userGuess
+
+        IF userGuess == randomNumber THEN
+            PRINT "Congratulations! You've guessed the number!"
+            BREAK
+        ELSE
+            DECREMENT attempts
+            PRINT "Wrong guess. You have " + attempts + " attempts left."
+        END IF
+    END WHILE
+
+    IF attempts == 0 THEN
+        PRINT "Sorry, you've run out of attempts. The number was " + randomNumber + "."
+    END IF
+END NumberGuessingGame
+
+
 
