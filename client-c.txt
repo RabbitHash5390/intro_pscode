@@ -1,4 +1,8 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+def count_packages(): 
+for i in range(2, 51, 2): 
+print(i) count_packages()
+
 
